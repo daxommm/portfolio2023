@@ -3,16 +3,18 @@
 @import './abstracts/mixins';
 
 //base
-@import './base/typography';
-@import './base/reset';
 @import './base/preset';
+@import './base/reset';
+@import './base/typography';
 
 //layout
 @import './layout/header';
 @import './layout/footer';
+@import './layout/nav';
 
+//components
+@import './components/badge';
 @import './components/buttons';
-@import './components/home/title';
 
-//pages
-@import './pages/home';
+//main
+@import './main/main';

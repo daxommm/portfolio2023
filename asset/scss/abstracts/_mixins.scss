@@ -1,33 +1,18 @@
-@mixin ellipsis {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
+@charset "UTF-8";
 
-@mixin multi-ellipsis($font-size, $line-height, $lines) {
-    font-size: $font-size;
-    line-height: $line-height;
-    max-height: $line-height * $lines;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: $lines;
-    -webkit-box-orient: vertical; /* autoprefixer: off */
-}
+@function em($val, $std:16) {
+    @return ($val/$std)*1em;
+  }
+  
+  @function rem($val, $std:16) {
+    @return ($val/$std)*1rem;
+  }
+  
+  @function vw($val, $std:1920) {
+    @return ($val/($std/100))*1vw;
+  }
 
-@mixin no-scrollbar{
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-    &::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera*/
-    }
-}
-
-
-
-$mobile : 767px;
-
-@mixin mobile{
-    @media (max-width: $mobile){
-      @content;
-    }
-}
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  

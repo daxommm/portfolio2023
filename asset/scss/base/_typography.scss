@@ -1,13 +1,57 @@
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@charset "UTF-8";
 
-
+//ABC
 @font-face {
-    font-family: 'boogy';
-    src: url('../fonts/boogy-brut-poster-regular.woff2') format('woff2');
-    font-weight: 400;
+	font-family: 'ABC';
+	font-style: normal;
+	font-weight: 400;
+	src: local('ABC'), url('../fonts/ABC-Normal.woff') format('woff');
 }
 @font-face {
-    font-family: 'boogy';
-    src: url('../fonts/boogy-brut-wild-black.woff2') format('woff2');
-    font-weight: 700;
+	font-family: 'ABC';
+	font-style: normal;
+	font-weight: 700;
+	src: local('ABC'), url('../fonts/ABC-Neutral.woff') format('woff');
+}
+
+//NeutralFace
+@font-face {
+	font-family: 'NeutralFace';
+	font-style: normal;
+	font-weight: 700;
+	src: local('NeutralFace'), url('../fonts/NeutralFace.woff') format('woff');
+}
+
+//SuisseIntl
+@font-face {
+	font-family: 'SuisseIntl';
+	font-style: normal;
+	font-weight: 300;
+	src: local('SuisseIntl'), url('../fonts/SuisseIntl-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'SuisseIntl';
+	font-style: normal;
+	font-weight: 400;
+	src: local('SuisseIntl'), url('../fonts/SuisseIntl-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'SuisseIntl';
+	font-style: normal;
+	font-weight: 500;
+	src: local('SuisseIntl'), url('../fonts/SuisseIntl-Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'SuisseIntl';
+	font-style: normal;
+	font-weight: 700;
+	src: local('SuisseIntl'), url('../fonts/SuisseIntl-Bold.woff') format('woff');
+}
+
+//Vinila
+@font-face {
+	font-family: 'Vinila';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Vinila'), url('../fonts/Vinila-Regular.woff') format('woff');
 }
