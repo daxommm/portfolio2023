@@ -32,15 +32,25 @@
             padding-bottom: 1rem;
         }
     }
-    .circle{
-        &-wrap{
-            font-family: 'SuisseIntl', sans-serif;
-        }
-    }
 }
 
 .section-2{
     height: 100vh;
     background: #fff;
     color: #000;
+    padding: 10rem 0;
+    .inner{
+        display: flex;
+        .img-bx{
+            flex: 1 0 40%;
+            max-width: 40%;
+            img{
+                border-radius: 40px;
+            }
+        }
+        .txt-bx{
+            flex: 1 0 60%;
+            max-width: 60%;
+        }
+    }
 }
