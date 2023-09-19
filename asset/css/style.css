@@ -12,6 +12,58 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.imgToCover {
+  /* background-cover */
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.imgToCover::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.imgToCover > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 1000%;
+  min-height: 1000%;
+  max-width: none;
+  max-height: none;
+  -webkit-transform: translate(-50%, -50%) scale(0.1);
+          transform: translate(-50%, -50%) scale(0.1);
+}
+
+.imgToContain {
+  /* background-contain */
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.imgToContain::after {
+  content: "";
+  display: block;
+  padding-bottom: contain;
+}
+.imgToContain > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -555,24 +607,6 @@ input:focus {
 }
 
 @font-face {
-  font-family: "ABC";
-  font-style: normal;
-  font-weight: 400;
-  src: local("ABC"), url("../fonts/ABC-Normal.woff") format("woff");
-}
-@font-face {
-  font-family: "ABC";
-  font-style: normal;
-  font-weight: 700;
-  src: local("ABC"), url("../fonts/ABC-Neutral.woff") format("woff");
-}
-@font-face {
-  font-family: "NeutralFace";
-  font-style: normal;
-  font-weight: 700;
-  src: local("NeutralFace"), url("../fonts/NeutralFace.woff") format("woff");
-}
-@font-face {
   font-family: "SuisseIntl";
   font-style: normal;
   font-weight: 300;
@@ -602,6 +636,60 @@ input:focus {
   font-weight: 400;
   src: local("Vinila"), url("../fonts/Vinila-Regular.woff") format("woff");
 }
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Pretendard"), url("../fonts/Pretendard-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Pretendard"), url("../fonts/Pretendard-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Pretendard"), url("../fonts/Pretendard-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pretendard"), url("../fonts/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Pretendard"), url("../fonts/Pretendard-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Pretendard"), url("../fonts/Pretendard-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Pretendard"), url("../fonts/Pretendard-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Pretendard"), url("../fonts/Pretendard-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Pretendard"), url("../fonts/Pretendard-Black.woff") format("woff");
+}
 .header {
   position: relative;
 }
@@ -624,9 +712,6 @@ input:focus {
   border-radius: 40px;
   padding: 0.6rem 1.2rem;
   font-size: 1.1rem;
-  /*                     border-radius: 50rem;
-                      font-size: 1.125rem;
-                      padding: 1rem 2rem; */
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   font-family: "SuisseIntl", sans-serif;
@@ -648,8 +733,6 @@ input:focus {
 }
 
 .section-1 {
-  background: #000;
-  color: #fff;
   height: 100vh;
 }
 .section-1 > .container {
@@ -683,28 +766,68 @@ input:focus {
 }
 
 .section-2 {
-  height: 100vh;
-  background: #fff;
-  color: #000;
-  padding: 10rem 0;
+  padding: 4rem 0;
 }
-.section-2 .inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.section-2 .main-tit {
+  border-bottom: 5px solid #111;
+  color: #111;
 }
-.section-2 .inner .img-bx {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 40%;
-          flex: 1 0 40%;
-  max-width: 40%;
+.section-2 .txt-bx {
+  font-family: "Pretendard", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.6em;
+  margin-bottom: 2rem;
 }
-.section-2 .inner .img-bx img {
-  border-radius: 40px;
+.section-2 .img-bx {
+  max-width: 25rem;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
 }
-.section-2 .inner .txt-bx {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 60%;
-          flex: 1 0 60%;
-  max-width: 60%;
+.section-2 .img-bx::after {
+  content: "";
+  display: block;
+  padding-bottom: 150%;
+}
+.section-2 .img-bx > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 1000%;
+  min-height: 1000%;
+  max-width: none;
+  max-height: none;
+  -webkit-transform: translate(-50%, -50%) scale(0.1);
+          transform: translate(-50%, -50%) scale(0.1);
+}
+.section-2 .img-bx img {
+  border-radius: 130rem;
+}
+
+.section-3 {
+  padding: 4rem 0;
+}
+
+.section-4 {
+  padding: 4rem 0;
+}
+
+.section {
+  background: #000;
+  color: #fff;
+}
+
+.main-tit {
+  font-family: "Vinila", sans-serif;
+  font-size: 8rem;
+  font-weight: 400;
+  letter-spacing: -9px;
+  line-height: 1;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
 }
