@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+// color
+$color-1: #d5fca2 !default;
+$colors: () !default;
+$colors: map-merge(
+	(
+		'color-1': $color-1,
+	),
+	$colors
+);
+
 .container{
 	max-width: 1440px;
 	width: 100%;
