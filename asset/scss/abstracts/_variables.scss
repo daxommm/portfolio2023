@@ -2,10 +2,16 @@
 
 // color
 $color-1: #d5fca2 !default;
+$color-2: #a5a5a5 !default;
+$color-3: #999 !default;
+$color-4: #4e4e4e !default;
 $colors: () !default;
 $colors: map-merge(
 	(
 		'color-1': $color-1,
+		'color-2': $color-2,
+		'color-3': $color-3,
+		'color-4': $color-4,
 	),
 	$colors
 );

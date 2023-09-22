@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.work{
+  padding: 4.5rem 0;
+  font-family: 'Pretendard', sans-serif;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    .img-bx{
+      flex: 1 0 38%;
+      max-width: 38%;
+      @include img-to-bg(percentage(540/540));
+      border-radius: 2rem;
+      border: 1px solid $color-2;
+    }
+    .txt-bx{
+      flex: 1 0 62%;
+      max-width: 62%;
+      padding-left: 7rem;
+      .tit-area{
+        .txt{
+          color: $color-2;
+          font-size: 1.15rem;
+          display: inline-block;
+        }
+        .tit{
+          font-size: 5.5rem;
+          font-weight: 700;
+          padding-top: 1rem;
+          letter-spacing: 0.02rem;
+        }
+      }
+      .inner{
+        margin: rem(40) 0;
+      }
+      .period,
+      .contribution{
+        font-size: 1.25rem;
+        color: $color-3;
+        margin-bottom: rem(20);
+      }
+      .skill{
+        &-list{
+          display: flex;
+          gap: 10px;
+          &__item{
+            font-size: 1.25rem;
+            color: $color-3;
+            text-transform: uppercase;
+            position: relative;
+            &::after{
+              content: '/';
+              color: #ddd;
+              margin-left: 10px;
+            }
+            &:last-child{
+              &::after{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .desc{
+        .txt{
+          font-size: 1.25rem;
+          color: $color-4;
+          padding-bottom: 1rem;
+          &:last-child{
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+}

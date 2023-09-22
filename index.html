@@ -13,8 +13,8 @@
   <header class="header">
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-list__item"><a href="#Projects" class="link">Projects</a></li>
-        <li class="nav-list__item"><a href="#none" class="link">Contact</a></li>
+        <li class="nav-list__item"><a href="#projects" class="link">Projects</a></li>
+        <li class="nav-list__item"><a href="mailto:dasomm57@naver.com" class="link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -46,11 +46,70 @@
         </div>
       </div>
     </div> -->
-<!--     <div class="section section-2">
+    <div class="section section-2" id="projects">
       <div class="container">
-        <h2 class="main-tit">Experience</h2>
+        <h2 class="main-tit">Projects</h2>
+        <div class="projects-wrap">
+          <ul class="projects-list">
+            <li class="projects-list__item">
+              <a href="./handong.html" class="link">
+                <div class="img-bx">
+                  <img src="./asset/images/projects/bg-handong.jpg" alt="">
+                </div>
+                <div class="txt-bx">
+                  <h3 class="projects-tit">HANDONG</h3>
+                  <p class="projects-desc">✦ HTML, CSS, JAVA SCRIPT</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="./dstmc.html" class="link">
+                <div class="img-bx">
+                  <img src="./asset/images/projects/bg-dstmc.jpg" alt="">
+                </div>
+                <div class="txt-bx">
+                  <h3 class="projects-tit">DAESUNG TMC</h3>
+                  <p class="projects-desc">✦ HTML, CSS, JAVA SCRIPT</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="./hyenseung.html" class="link">
+                <div class="img-bx">
+                  <img src="./asset/images/projects/bg-hseung.jpg" alt="">
+                </div>
+                <div class="txt-bx">
+                  <h3 class="projects-tit">HYUNSEUNG</h3>
+                  <p class="projects-desc">✦ HTML, CSS, JAVA SCRIPT</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="./gnseverance.html" class="link">
+                <div class="img-bx">
+                  <img src="./asset/images/projects/bg-gnseverance.jpg" alt="">
+                </div>
+                <div class="txt-bx">
+                  <h3 class="projects-tit">NEW GANGNAM SEVERANCE</h3>
+                  <p class="projects-desc">✦ HTML, CSS, JAVA SCRIPT</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects-list__item">
+              <a href="./buncharaboom.html" class="link">
+                <div class="img-bx">
+                  <img src="./asset/images/projects/bg-buncha.jpeg" alt="">
+                </div>
+                <div class="txt-bx">
+                  <h3 class="projects-tit">BUNCHARABOOM</h3>
+                  <p class="projects-desc">✦ HTML, CSS, JAVA SCRIPT</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div> -->
+    </div>
     <div class="section section-3">
       <div class="container">
         <div class="project--2">
@@ -98,8 +157,52 @@
   
   <script src="./asset/js/jquery-1.12.4.min.js"></script>
   <script src="./asset/js/smooth-scrollbar.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
   <script src="./asset/js/custom.js"></script>
+  <script>
+    /* GSAP 시작 */
+/*     gsap.registerPlugin(ScrollTrigger);
+
+    const ani6 = gsap.timeline();
+    ani6.to("#projects .main-tit", {scale: 0.35, duration: 1.5})
+        .to("#projects .main-tit", {autoAlpha: 1})
+
+    ScrollTrigger.create({
+        animation: ani6,
+        trigger: "#projects",
+        start: "top top",
+        end: "+=2000",
+        scrub: true,
+        pin: true, 
+        anticipatePin: 1,
+        markers: true
+    }); */
+  
+/*     ScrollTrigger.matchMedia({
+    "(min-width: 1025px)": function() {
+      $('.section-2 .main-tit').removeAttr('style');
+        gsap.to('.section-2 .main-tit', { fontSize: '200', duration: 3,
+          scrollTrigger: {
+            trigger: '.section-2 .main-tit',
+            start: 'top 300px',
+            end: 'top',
+            scrub: 2,
+            ease: Sine.easeOut,
+            autoRound: false,
+            delay: 2,
+          }
+        });
+      }
+    }); */
+
+    // 클릭 시 특정 위치로 부드럽게 스크롤 이동시키기
+/*     $('.header .nav .link').on('click', function(){
+      $('html, body').animate({scrollTop:$(this.hash).offset().top}, 500)
+    }); */
+  </script>
 </body>
 </html>
+
+
