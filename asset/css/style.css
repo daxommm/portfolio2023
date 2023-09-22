@@ -1039,6 +1039,8 @@ input:focus {
 }
 .work .wrapper .txt-bx .desc .txt {
   font-size: 1.25rem;
+  line-height: 1.8;
+  letter-spacing: -0.3px;
   color: #4e4e4e;
   padding-bottom: 1rem;
 }
