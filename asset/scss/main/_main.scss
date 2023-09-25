@@ -29,11 +29,11 @@
             }
             @include mdq-max(sm){
                 font-size: 4.5rem;
-                letter-spacing: -5px;
+                letter-spacing: -6px;
             }
             @include mdq-max(xs){
                 font-size: 3.7rem;
-                letter-spacing: -4px;
+                letter-spacing: -5px;
             }
         }
         &-sub{

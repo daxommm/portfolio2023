@@ -806,13 +806,13 @@ input:focus {
 @media all and (max-width: 576px) {
   .section-1 .msg-main {
     font-size: 4.5rem;
-    letter-spacing: -5px;
+    letter-spacing: -6px;
   }
 }
 @media all and (max-width: 375px) {
   .section-1 .msg-main {
     font-size: 3.7rem;
-    letter-spacing: -4px;
+    letter-spacing: -5px;
   }
 }
 .section-1 .msg-sub {
@@ -1121,6 +1121,21 @@ input:focus {
   padding: 4.5rem 0;
   font-family: "Pretendard", sans-serif;
 }
+@media all and (max-width: 576px) {
+  .work--4 .tit-area .tit {
+    font-size: 2.5rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .work--4 .tit-area .tit {
+    font-size: 2.1rem !important;
+  }
+}
+@media all and (max-width: 320px) {
+  .work--4 .tit-area .tit {
+    font-size: 2rem !important;
+  }
+}
 @media all and (max-width: 768px) {
   .work {
     padding: 4rem 0;
@@ -1236,14 +1251,34 @@ input:focus {
   padding-top: 1rem;
   letter-spacing: 0.02rem;
 }
+@media all and (max-width: 1400px) {
+  .work .wrapper .txt-bx .tit-area .tit {
+    font-size: 4.7rem;
+  }
+}
+@media all and (max-width: 1200px) {
+  .work .wrapper .txt-bx .tit-area .tit {
+    font-size: 4.2rem;
+  }
+}
+@media all and (max-width: 1200px) {
+  .work .wrapper .txt-bx .tit-area .tit {
+    font-size: 3.9rem;
+  }
+}
 @media all and (max-width: 768px) {
   .work .wrapper .txt-bx .tit-area .tit {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
   }
 }
 @media all and (max-width: 576px) {
   .work .wrapper .txt-bx .tit-area .tit {
     font-size: 3.5rem;
+  }
+}
+@media all and (max-width: 375px) {
+  .work .wrapper .txt-bx .tit-area .tit {
+    font-size: 3rem;
   }
 }
 .work .wrapper .txt-bx .inner {

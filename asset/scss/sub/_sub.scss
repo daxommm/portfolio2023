@@ -1,6 +1,21 @@
 @charset "UTF-8";
 
 .work{
+  &--4{
+    .tit-area{
+      .tit{
+        @include mdq-max(sm){
+          font-size: 2.5rem !important;
+        }
+        @media (max-width:400px){
+          font-size: 2.1rem !important;
+        }
+        @include mdq-max(xxs){
+          font-size: 2rem !important;
+        }
+      }
+    }
+  }
   padding: 4.5rem 0;
   font-family: 'Pretendard', sans-serif;
   @include mdq-max(md){
@@ -60,11 +75,24 @@
           font-weight: 700;
           padding-top: 1rem;
           letter-spacing: 0.02rem;
+          @include mdq-max(xxl){
+            font-size: 4.7rem;
+          }
+          @include mdq-max(xl){
+            font-size: 4.2rem;
+          }
+          @include mdq-max(xl){
+            font-size: 3.9rem;
+          }
+
           @include mdq-max(md){
-            font-size: 4.5rem;
+            font-size: 3.8rem;
           }
           @include mdq-max(sm){
             font-size: 3.5rem;
+          }
+          @include mdq-max(xs){
+            font-size: 3rem;
           }
         }
       }
