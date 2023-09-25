@@ -125,9 +125,6 @@
                     padding-bottom: 0;
                 }
                 @include mdq-max(md){
-                    padding-bottom: 5rem;
-                }
-                @include mdq-max(xs){
                     padding-bottom: 4rem;
                 }
                 .link{
@@ -148,6 +145,9 @@
                         border-radius: rem(55);
                         @include mdq-max(md){
                             border-radius: 1.5rem;
+                            &::after{
+                                padding-bottom: 45%;
+                            }
                         }
                         @include mdq-max(xs){
                             border-radius: 1rem;

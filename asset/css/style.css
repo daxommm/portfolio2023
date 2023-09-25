@@ -920,11 +920,6 @@ input:focus {
 }
 @media all and (max-width: 768px) {
   .section-2 .projects-list__item {
-    padding-bottom: 5rem;
-  }
-}
-@media all and (max-width: 375px) {
-  .section-2 .projects-list__item {
     padding-bottom: 4rem;
   }
 }
@@ -966,6 +961,9 @@ input:focus {
 @media all and (max-width: 768px) {
   .section-2 .projects-list__item .link .img-bx {
     border-radius: 1.5rem;
+  }
+  .section-2 .projects-list__item .link .img-bx::after {
+    padding-bottom: 45%;
   }
 }
 @media all and (max-width: 375px) {
