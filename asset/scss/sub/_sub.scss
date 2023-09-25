@@ -3,41 +3,92 @@
 .work{
   padding: 4.5rem 0;
   font-family: 'Pretendard', sans-serif;
+  @include mdq-max(md){
+    padding: 4rem 0;
+  }
   .wrapper {
     display: flex;
     align-items: center;
+    @include mdq-max(lg){
+      flex-direction: column;
+    }
     .img-bx{
       flex: 1 0 38%;
       max-width: 38%;
       @include img-to-bg(percentage(540/540));
       border-radius: 2rem;
       border: 1px solid $color-2;
+      @include mdq-max(xxl){
+        flex: 1 0 40%;
+        max-width: 40%;
+      }
+      @include mdq-max(lg){
+        flex: 1 0 100%;
+        max-width: 100%;
+        width: 100%;
+      }
     }
     .txt-bx{
       flex: 1 0 62%;
       max-width: 62%;
       padding-left: 7rem;
+      @include mdq-max(xxl){
+        padding-left: 4rem;
+        flex: 1 0 60%;
+        max-width: 60%;
+      }
+      @include mdq-max(lg){
+        flex: 1 0 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-top: 4rem;
+      }
+      @include mdq-max(md){
+        padding-top: 3rem;
+      }
       .tit-area{
         .txt{
           color: $color-2;
           font-size: 1.15rem;
           display: inline-block;
+          @include mdq-max(sm){
+            font-size: 1.1rem;
+          }
         }
         .tit{
           font-size: 5.5rem;
           font-weight: 700;
           padding-top: 1rem;
           letter-spacing: 0.02rem;
+          @include mdq-max(md){
+            font-size: 4.5rem;
+          }
+          @include mdq-max(sm){
+            font-size: 3.5rem;
+          }
         }
       }
       .inner{
         margin: rem(40) 0;
+        @include mdq-max(md){
+          margin: 2rem 0;
+        }
+        @include mdq-max(sm){
+          margin: 1.5rem 0;
+        }
       }
       .period,
       .contribution{
         font-size: 1.25rem;
         color: $color-3;
         margin-bottom: rem(20);
+        @include mdq-max(md){
+          font-size: 1.1rem;
+        }
+        @include mdq-max(sm){
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
       }
       .skill{
         &-list{
@@ -48,6 +99,12 @@
             color: $color-3;
             text-transform: uppercase;
             position: relative;
+            @include mdq-max(md){
+              font-size: 1.1rem;
+            }
+            @include mdq-max(sm){
+              font-size: 1rem;
+            }
             &::after{
               content: '/';
               color: #ddd;
@@ -68,6 +125,12 @@
           letter-spacing: -0.3px;
           color: $color-4;
           padding-bottom: 1rem;
+          @include mdq-max(md){
+            font-size: 1.1rem;
+          }
+          @include mdq-max(sm){
+            font-size: 1rem;
+          }
           &:last-child{
             padding-bottom: 0;
           }
@@ -75,5 +138,29 @@
       }
     }
   }
-
+  .contents{
+    .img{
+      &-wrap{
+        //border: 1px solid $color-2;
+      }
+      &-bx{
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+      }
+    }
+    .txt-bx{
+      margin-bottom: 2rem;
+      font-family: 'Pretendard', sans-serif;
+      font-size: 1.25rem;
+      line-height: 1.8;
+      letter-spacing: -0.3px;
+      color: $color-4;
+      @include mdq-max(sm){
+        font-size: 1.1rem;
+      }
+      @include mdq-max(xs){
+        font-size: 1rem;
+      }
+    }
+  }
 }
