@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 .work{
+  padding: 4.5rem 0;
+  font-family: 'Pretendard', sans-serif;
+  @include mdq-max(md){
+    padding: 4rem 0;
+  }
   &--4{
     .tit-area{
       .tit{
@@ -16,10 +21,31 @@
       }
     }
   }
-  padding: 4.5rem 0;
-  font-family: 'Pretendard', sans-serif;
-  @include mdq-max(md){
-    padding: 4rem 0;
+  &--5{
+    .img{
+      &-wrap{
+        display: flex;
+        justify-content: space-between;
+        @include mdq-max(sm){
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+      }
+      &-area{
+        flex: 1 0 48%;
+        max-width: 48%;
+        @include mdq-max(sm){
+          flex: 1 0 100%;
+          max-width: 100%;
+        }
+      }
+      &-bx{
+        border-top: 1px solid $color-2;
+        border-bottom: 1px solid $color-2;
+        @include img-to-bg(percentage(879/935));
+        padding: 0 !important;
+      }
+    }
   }
   .wrapper {
     display: flex;
@@ -167,27 +193,69 @@
     }
   }
   .contents{
+    margin-top: 7rem;
+    @include mdq-max(xl){
+      margin-top: 5rem;
+    }
+    @include mdq-max(md){
+      margin-top: 3rem;
+    }
+    .inner{
+      &:first-child{
+        .img-area{
+          margin-top: 0;
+        }
+      }
+    }
     .img{
       &-wrap{
-        //border: 1px solid $color-2;
+
+      }
+      &-area{
+        border: 1px solid $color-2;
+        border-radius: 2rem;
+        background: #fcfbfc;
+        padding: 4.3rem 0;
+        margin-top: 5rem;
+        @include mdq-max(md){
+          margin-top: 3rem;
+        }
+        @include mdq-max(sm){
+          padding: 2.5rem 0;
+          border-radius: 1rem;
+        }
       }
       &-bx{
-        margin-top: 7rem;
-        margin-bottom: 2rem;
+        text-align: center;
+        padding: 0 5rem;
+        @include mdq-max(md){
+          padding: 0 3rem;
+        }
+        @include mdq-max(sm){
+          padding: 0 2rem;
+        }
+        img{
+          border-radius: 1rem;
+          border: 1px solid $color-2;
+          @include mdq-max(sm){
+            border-radius: 0.5rem;
+          }
+        }
       }
     }
     .txt-bx{
-      margin-bottom: 2rem;
       font-family: 'Pretendard', sans-serif;
       font-size: 1.25rem;
       line-height: 1.8;
       letter-spacing: -0.3px;
       color: $color-4;
-      @include mdq-max(sm){
+      margin-top: 2rem;
+      @include mdq-max(md){
         font-size: 1.1rem;
       }
-      @include mdq-max(xs){
+      @include mdq-max(sm){
         font-size: 1rem;
+        margin-top: 1.5rem;
       }
     }
   }
