@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2023 Portfolio</title>
   <link rel="stylesheet" href="./asset/css/smooth-scrollbar.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./asset/css/style.min.css">
   <link rel="shortcut icon" href="#">
 </head>
@@ -39,6 +40,7 @@
                   <li class="skill-list__item">php</li>
                 </ul>
               </div>
+              <a href="http://www.buncharaboom.co.kr/main/main.html" target="_blank" class="link">Go site</a>
             </div>
             <div class="desc">
               <p class="txt">
@@ -53,23 +55,32 @@
         <div class="contents">
           <div class="inner">
             <div class="img-wrap">
-              <div class="img-area">
+              <div class="img-area" data-aos="fade-up">
                 <div class="img-bx">
                   <img src="./asset/images/sub/buncha/img1.png" alt="">
                 </div>
               </div>
-              <div class="img-area">
+              <div class="img-area" data-aos="fade-up">
                 <div class="img-bx">
                   <img src="./asset/images/sub/buncha/img3.png" alt="">
                 </div>
               </div>
             </div>
-            <div class="txt-bx">
+            <div class="txt-bx" data-aos="fade-up">
               스크롤이 길어질 경우, 클릭하면 화면이 맨 위로 부드럽게 이동할 수 있도록 도와주는 버튼을 만들었으며,
               사용자가 웹페이지를 이용하면서 시각적으로 방해되지 않게 하단에 고정시켰습니다.
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="pagination" data-aos="fade-up">
+      <div class="container">
+        <h3 class="tit">Next</h3>
+        <a href="./hyenseung.html" class="link">현승종합건설</a>
+        <a href="./gnseverance.html" class="link">강남세브란스병원</a>
+        <a href="./buncharaboom.html" class="link">분짜라붐</a>
+        <a href="" class="link">EFS 배송대행</a>
       </div>
     </div>
   </main>
@@ -81,9 +92,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./asset/js/custom.js"></script>
   <script>
-
+    AOS.init();
   </script>
 </body>
 </html>

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2023 Portfolio</title>
   <link rel="stylesheet" href="./asset/css/smooth-scrollbar.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./asset/css/style.min.css">
   <link rel="shortcut icon" href="#">
 </head>
@@ -39,6 +40,7 @@
                   <li class="skill-list__item">php</li>
                 </ul>
               </div>
+              <a href="https://www.e-hseng.com/main/main.html" target="_blank" class="link">Go site</a>
             </div>
             <div class="desc">
               <p class="txt">
@@ -49,36 +51,45 @@
         </div>
         <div class="contents">
           <div class="inner">
-            <div class="img-area">
+            <div class="img-area" data-aos="fade-up">
               <div class="img-bx">
                 <img src="./asset/images/sub/hseung/img1.png" alt="">
               </div>
             </div>
-            <div class="txt-bx">
+            <div class="txt-bx" data-aos="fade-up">
               video 태그를 이용하여 동영상이 자동재생, 무한재생되게 하였으며 동영상 재생시간을 설정하여 동영상이 끝나면 다음 슬라이드로 넘어갈 수 있게 설정했습니다.
             </div>
           </div>
           <div class="inner">
-            <div class="img-area">
+            <div class="img-area" data-aos="fade-up">
               <div class="img-bx">
                 <img src="./asset/images/sub/hseung/img3.png" alt="">
               </div>
             </div>
-            <div class="txt-bx">
+            <div class="txt-bx" data-aos="fade-up">
               갤러리형 게시판에서 magnificPopup 플러그인을 사용하여 특정 이미지 클릭 시 팝업창으로 이미지를 띄우는 기능을 적용하였습니다.
             </div>
           </div>
           <div class="inner">
-            <div class="img-area">
+            <div class="img-area" data-aos="fade-up">
               <div class="img-bx">
                 <img src="./asset/images/sub/hseung/img2.png" alt="">
               </div>
             </div>
-            <div class="txt-bx">
+            <div class="txt-bx" data-aos="fade-up">
               
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="pagination" data-aos="fade-up">
+      <div class="container">
+        <h3 class="tit">Next</h3>
+        <a href="./hyenseung.html" class="link">현승종합건설</a>
+        <a href="./gnseverance.html" class="link">강남세브란스병원</a>
+        <a href="./buncharaboom.html" class="link">분짜라붐</a>
+        <a href="" class="link">EFS 배송대행</a>
       </div>
     </div>
   </main>
@@ -90,9 +101,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./asset/js/custom.js"></script>
   <script>
-
+    AOS.init();
   </script>
 </body>
 </html>
