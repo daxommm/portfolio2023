@@ -21,32 +21,6 @@
       }
     }
   }
-  &--5{
-    .img{
-      &-wrap{
-        display: flex;
-        justify-content: space-between;
-        @include mdq-max(sm){
-          flex-direction: column;
-          gap: 1.5rem;
-        }
-      }
-      &-area{
-        flex: 1 0 48%;
-        max-width: 48%;
-        @include mdq-max(sm){
-          flex: 1 0 100%;
-          max-width: 100%;
-        }
-      }
-      &-bx{
-        border-top: 1px solid $color-2;
-        border-bottom: 1px solid $color-2;
-        @include img-to-bg(percentage(879/935));
-        padding: 0 !important;
-      }
-    }
-  }
   .wrapper {
     display: flex;
     align-items: center;
@@ -83,6 +57,7 @@
         max-width: 100%;
         padding-left: 0;
         padding-top: 4rem;
+        width: 100%;
       }
       @include mdq-max(md){
         padding-top: 3rem;
@@ -173,7 +148,6 @@
       }
       .link{
         display: inline-block;
-        margin-top: 1.5rem;
         font-size: 1.25rem;
         border-radius: 40px;
         padding: 0.6rem 1.2rem;
@@ -185,7 +159,6 @@
         overflow: hidden;
         @include mdq-max(md){
           font-size: 1.1rem;
-          margin-top: 1.5rem;
         }
         @include mdq-max(sm){
           font-size: 1rem;
@@ -207,24 +180,6 @@
           height: 100%;
           transition: all 0.4s;
           background-color: #d5fca2;
-        }
-      }
-      .desc{
-        .txt{
-          font-size: 1.25rem;
-          line-height: 1.8;
-          letter-spacing: -0.3px;
-          color: $color-4;
-          padding-bottom: 1rem;
-          @include mdq-max(md){
-            font-size: 1.1rem;
-          }
-          @include mdq-max(sm){
-            font-size: 1rem;
-          }
-          &:last-child{
-            padding-bottom: 0;
-          }
         }
       }
     }
