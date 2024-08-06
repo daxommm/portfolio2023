@@ -1019,100 +1019,11 @@ input:focus {
   }
 }
 
-.section-3 {
-  padding: 10rem 0;
-}
-.section-3 .main-tit {
-  font-size: 3rem;
-  padding-bottom: 2rem;
-}
-.section-3 .main-tit .deco {
-  color: #d5fca2;
-}
-.section-3 .menu-list__item .link {
-  position: relative;
-  border-top: 1px solid rgb(43, 38, 43);
-  border-bottom: 1px solid rgb(43, 38, 43);
-  padding: 1rem 0;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.section-3 .menu-list__item .link:hover .img-wrap {
-  margin-left: 1rem !important;
-}
-.section-3 .menu-list__item .link .tit {
-  font-size: 7.5rem;
-  padding: 0 5rem;
-}
-.section-3 .menu-list__item .link .tit-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  gap: 30px;
-  height: 220px;
-}
-.section-3 .menu-list__item .link .tit-inner .img-wrap {
-  display: none;
-  margin-left: -99999px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.section-3 .menu-list__item .link .tit-inner .img-bx {
-  width: 18.3125rem !important;
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-.section-3 .menu-list__item .link .tit-inner .img-bx::after {
-  content: "";
-  display: block;
-  padding-bottom: 75.0853242321%;
-}
-.section-3 .menu-list__item .link .tit-inner .img-bx > img {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  min-width: 1000%;
-  min-height: 1000%;
-  max-width: none;
-  max-height: none;
-  -webkit-transform: translate(-50%, -50%) scale(0.1);
-          transform: translate(-50%, -50%) scale(0.1);
-}
-.section-3 .menu-list__item .link .tit-inner .img-bx img {
-  border-radius: 50px;
-}
-.section-3 .menu-list__item .link .deco-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 0 5rem;
-}
-.section-3 .menu-list__item .link .deco-inner .arrow {
-  fill: #fff;
-  position: absolute;
-  top: 10%;
-}
-.section-3 .menu-list__item .link .deco-inner .desc {
-  position: absolute;
-  bottom: 10%;
-  font-size: 1.25rem;
-  color: #b1b1b1;
+#other p {
+  border-top: 1px solid #555;
+  text-align: right;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .work {

@@ -192,75 +192,12 @@
         }
     }
 }
-.section-3{
-    padding: 10rem 0;
-    .main-tit{
-        font-size: 3rem;
-        padding-bottom: 2rem;
-        .deco{
-            color: $color-1;
-        }
-    }
-    .menu{
-        &-list{
-            &__item{
-                .link{
-                    position: relative;
-                    border-top: 1px solid rgb(43,38,43);
-                    border-bottom: 1px solid rgb(43,38,43);
-                    padding: 1rem 0;
-                    display: block;
-                    transition: 0.3s;
-                    &:hover{
-                        .img-wrap{
-                            margin-left: 1rem !important;
-                        }
-                    }
-                    .tit{
-                        font-size: 7.5rem;
-                        padding: 0 5rem;
-                        &-inner{
-                            display: flex;
-                            align-items: center;
-                            position: relative;
-                            gap: 30px;
-                            height: 220px;
-                            .img{
-                                &-wrap{
-                                    display: none;
-                                    margin-left: -99999px;
-                                    transition: 0.3s;
-                                }
-                                &-bx{
-                                    width: rem(293) !important;
-                                    @include img-to-bg(percentage(220/293));
-                                    img{
-                                        border-radius: 50px;
-                                    }
 
-                                }
-                            }
-                        }
-                    }
-                    .deco-inner{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-end;
-                        padding: 0 5rem;
-                        .arrow{
-                            fill: #fff;
-                            position: absolute;
-                            top: 10%;
-                        }
-                        .desc{
-                            position: absolute;
-                            bottom: 10%;
-                            font-size: 1.25rem;
-                            color: #b1b1b1;
-                        }
-                    }
-                }
-            }
-        }
+#other{
+    p{
+        border-top:1px solid #555;
+        text-align: right;
+        padding-top:2rem;
+        padding-bottom: 3rem;
     }
 }
